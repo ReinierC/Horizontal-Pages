@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800|Ubuntu:300,400,500,600,700,800');
+
+.color-main {
+  color: #00A867;
+}
+.color-secundary {
+  color: #ADD3D8;
+}
+
+.color-tertiary {
+  color: #3F7F66;
+}
+.color-background {
+  color: #F2F2F2;
+}
+.background-color-main {
+  background-color: #00A867;
+}
+.background-color-secundary {
+  background-color: #ADD3D8;
+}
+
+.background-color-tertiary {
+  background-color: #3F7F66;
+}
+.background-color-background {
+  background-color: #F2F2F2;
+}
+
+html, body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #3F7F66;
+  margin:0;
+}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', Arial, Helvetica, sans-serif;}
+
+.knop {
+  color: #fff;
+  padding: 7px;
+  border: solid #fff 2px;
+  text-decoration: none;
+  margin: 12px, 12px, 12px, 12px;
+}
+
+.knop:hover {
+  text-decoration: none;
+  border: solid #00A867 2px;
+}
+
+/*  Gridalicious */
+/*  Grid nav   */
+#gridNav {
+  display: grid;
+  z-index: 667;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "n n n n n n n n n n n"
+}
+#gridNav-logo {
+  grid-area: n;
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 65px;
+  font-size: 1rem;
+}
+.navLogo {
+  z-index: 75;
+  width: auto;
+  max-height: 10vh;
+}
+#gridNav-burger {
+  grid-area: n;
+  grid-column-start: 10;
+  background-color: #F2F2F2;
+  justify-self: center;
+}
+.rcNav {
+   background-color: #F2F2F2;
+   justify-self: center;
+}
+
+/* Style the links inside the navigation bar */
+.rcNav a {
+   display: block;
+   color: #00A867;
+   padding-top: 0.8rem;
+   padding-bottom: 0.8rem;
+   padding-left: 10vw;
+   padding-right: 10vw;
+   text-decoration: none;
+   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+   font-size: 1.1rem;
+}
+
+/* Change the color of links on hover */
+.rcNav a:hover {
+   background-color: #ADD3D8;
+   color: #3F7F66;
+}
+
+.rcNav a {
+  display: none;
+ }
+
+ #gridNav-burger a.icon {
+   float: right;
+   display: block;
+   font-size: 6vh;
+   text-decoration: none;
+   color: #00A867;
+   margin-top: 2vh;
+ }
+
+ .rcNav.responsive {
+   position: fixed;
+   height: 90vh;
+   width: 100vw;
+   padding-top: 5%;
+   z-index: 33;
+   display: grid;
+   grid-template-columns: 10% 10fr 10%;
+   grid-template-rows: repeat(10, [row] 1fr);
+ }
+ #navGridItem {
+     grid-column: 2;
+     grid-row: 3;
+     justify-self: center;
+     font-size: 1.1rem;
+  }
+ .rcNav.responsive a.icon {
+   font-size: 1.7rem;
+ }
+ .rcNav.responsive a {
+   float: none;
+   display: block;
+   text-align: left;
+   font-size: 1.2rem;
+ }
+/* ---=== END Grid nav ===---   */
+
+/*  Grid Horizontal-Hero   */
+#gridHero {
+  display: grid;
+  height: 80vh;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 100vw);
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas: "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5"
+                       "p1 p2 p3 p4 p5";
+}
+#gridHero a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#gridHero-carousel1-grid {
+  grid-area: p1;
+  display: grid;
+  grid-template-columns: 10% 10fr 10%;
+  grid-template-rows: repeat(10, [row] 1fr);
+  color: #fff;
+  background-color: #3d876a;
+}
+#gridHero-carousel1 {
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: center;
+  font-size: 1.2rem;
+}
+
+#gridHero-carousel2-grid {
+  grid-area: p2;
+  display: grid;
+  grid-template-columns: repeat(10, [col] 1fr);
+  grid-template-rows: repeat(10, [row] 1fr);
+  color: #fff;
+  background-color: #399672;
+}
+#gridHero-carousel2 {
+  grid-column: col 2 / span 8;
+  grid-row: row 1 / span 8;
+}
+
+#gridHero-carousel3-grid {
+  grid-area: p3;
+  display: grid;
+  grid-template-columns: repeat(10, [col] 1fr);
+  grid-template-rows: repeat(10, [row] 1fr);
+  color: #fff;
+  background-color: #36a176;
+}
+#gridHero-carousel3 {
+  grid-column: col 2 / span 8;
+  grid-row: row 1 / span 8;
+}
+
+#gridHero-carousel4-grid {
+  grid-area: p4;
+  display: grid;
+  grid-template-columns: repeat(10, [col] 1fr);
+  grid-template-rows: repeat(10, [row] 1fr);
+  color: #fff;
+  background-color: #34aa7a;
+}
+#gridHero-carousel4 {
+  grid-column: col 2 / span 8;
+  grid-row: row 1 / span 8;
+}
+
+#gridHero-carousel5-grid {
+  grid-area: p5;
+  display: grid;
+  grid-template-columns: repeat(10, [col] 1fr);
+  grid-template-rows: repeat(10, [row] 1fr);
+  color: #fff;
+  background-color: #30b37e;
+}
+#gridHero-carousel5 {
+  grid-column: col 2 / span 8;
+  grid-row: row 1 / span 8;
+}
+
+/*   anchor keeps proper position after using an anchor to scroll horizontally   */
+.anchor {
+    padding-top: 10vh;
+    margin-top: -10vh;
+}
+/* ---=== END Grid Hero-Carousel ===---   */
+
+/*  Grid Hero-Footer   */
+.gridFooter {
+  display: grid;
+  z-index: 667;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "f f f f f f f f f f f"
+}
+.gridFooter-footsey {
+  grid-area: f;
+  background-color: #F2F2F2;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 22;
+  padding-top: 2vh;
+}
+.gridFooter-footsey a {
+  color: #3F7F66;
+  font-size: 6vh;
+}
+/* ---=== END Grid Hero-Footer ===---   */
+
+.gridContent {
+  background-color: #F2F2F2;
+  display: grid;
+  height: 80vh;
+  grid-template-columns: repeat(10, [col] 1fr);
+  grid-template-rows: repeat(10, [row] 1fr);
+}
+.gridContent-Box {
+  grid-column: col 2 / span 8;
+  grid-row: row 1 / span 8;
+}
+
+/* get rid of dotted lines around buttons */
+a, a:active, a:focus, a:hover{
+outline: none;
+}

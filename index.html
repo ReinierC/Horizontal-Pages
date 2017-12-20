@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="UTF-8">
+  <title>CSS3 Grid Horizontal-Hero</title>
+  <meta name="description" content="#">
+  <meta name="keywords" content="#">
+  <meta name="author" content="Reinier Caron">
+
+  <!-- Mobile Specific Metas
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <!-- This wil scale the fontsize so high res mobile users won´t have to squint -->
+
+
+  <script src="https://use.fontawesome.com/76cede2a1e.js"></script>
+  <link rel="stylesheet prefetch" href="css/style-grid.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+
+<div id="gridNav">
+  <div id="gridNav-logo">
+    <h2>CSS Grid: <i>Horizontal-Hero</i></h2>
+  </div>
+  <div id="gridNav-burger">
+    <a href="javascript:void(0);" class="icon" onclick="closenavFunction()">&#9776;</a>
+  </div>
+</div>
+
+<div class="rcNav" id="rcTopNav">
+  <div id="navGridItem">
+    <a href="#sectionOne" onclick="closenavFunction()">Section One</a>
+    <a href="#sectionTwo" onclick="closenavFunction()">Section two</a>
+    <a href="#gridHero-carousel1-grid" onclick="closenavFunction()">First div</a>
+    <a href="#gridHero-carousel2-grid" onclick="closenavFunction()">Second div</a>
+    <a href="#gridHero-carousel3-grid" onclick="closenavFunction()">Third div</a>
+    <a href="#gridHero-carousel4-grid" onclick="closenavFunction()">Fourth div</a>
+    <a href="#gridHero-carousel5-grid" onclick="closenavFunction()">Fifth div</a>
+  </div>
+</div>
+
+  <div id="gridHero" class="anchor">
+    <div id="gridHero-carousel1-grid" class="anchor">
+      <div id="gridHero-carousel1">
+        <h2>First div</h2>
+        <br>
+        <a href="#gridHero-carousel2-grid"><h5>Second div</h5></a>
+        <a href="#gridHero-carousel3-grid"><h5>Third div</h5></a>
+        <a href="#gridHero-carousel4-grid"><h5>Fourth div</h5></a>
+        <a href="#gridHero-carousel5-grid"><h5>Fifth div</h5></a>
+      </div>
+    </div>
+
+    <div id="gridHero-carousel2-grid" class="anchor">
+        <div id="gridHero-carousel2">
+        <br>
+        <a href="#gridHero-carousel1-grid">First div | </a>
+        <a href="#gridHero-carousel3-grid">Third div | </a>
+        <a href="#gridHero-carousel4-grid">Fourth div | </a>
+        <a href="#gridHero-carousel5-grid">Fifth div</a>
+        <h2>Second div</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed  Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+      </div>
+    </div>
+
+    <div id="gridHero-carousel3-grid" class="anchor">
+      <div id="gridHero-carousel3">
+        <br>
+        <a href="#gridHero-carousel1-grid">First div | </a>
+        <a href="#gridHero-carousel2-grid">Second div | </a>
+        <a href="#gridHero-carousel4-grid">Fourth div | </a>
+        <a href="#gridHero-carousel5-grid">Fifth div</a>
+        <h2>Third div</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed  Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+      </div>
+    </div>
+
+    <div id="gridHero-carousel4-grid" class="anchor">
+      <div id="gridHero-carousel4">
+        <br>
+        <a href="#gridHero-carousel1-grid">First div | </a>
+        <a href="#gridHero-carousel2-grid">Second div | </a>
+        <a href="#gridHero-carousel3-grid">Third div | </a>
+        <a href="#gridHero-carousel5-grid">Fifth div</a>
+        <h2>Fourth div</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed  Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+      </div>
+    </div>
+
+    <div id="gridHero-carousel5-grid" class="anchor">
+      <div id="gridHero-carousel5">
+        <br>
+        <a href="#gridHero-carousel1-grid">First div | </a>
+        <a href="#gridHero-carousel2-grid">Second div | </a>
+        <a href="#gridHero-carousel3-grid">Third div | </a>
+        <a href="#gridHero-carousel4-grid">Fourth div</a>
+        <h2>Fifth div</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed  Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="gridFooter">
+  <div class="gridFooter-footsey">
+    <a href="#sectionOne"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<div class="gridContent">
+  <div id="sectionOne" class="anchor gridContent-Box">
+    <h2>Section One</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed  Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+  </div>
+</div>
+
+<div class="gridFooter">
+  <div class="gridFooter-footsey">
+    <a href="#gridHero-carousel1-grid"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+    <a href="#sectionTwo"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<div class="gridContent">
+  <div id="sectionTwo" class="anchor gridContent-Box">
+    <h2>Section Two</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed  Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+  </div>
+</div>
+
+<div class="gridFooter">
+  <div class="gridFooter-footsey">
+    <a href="#sectionOne"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<script src="js/nav.js"></script>
+
+</body>
+
+</html>
